@@ -26,7 +26,7 @@ For Details: [Readme](./Common_Task_1.2/README.md)
 
 Titans architecture combined with MIRAS for Squared Amplitude Calculation
 
-For Details and model weights: [Readme](./Common_Task_2.4/README.md)
+For Details and model weights: [Readme](./Specific_Task_2.4/README.md)
 
 ## Results
 
