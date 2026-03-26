@@ -12,7 +12,7 @@ This repo is my submissionn of evaluation tasks for **Titans for Squared Amplitu
 
 ## Problem Statement
 
-In HEP cross sections quantify interaction probabilities in particle physics and are computed from squared amplitudes. This project models amplitude to squared-amplitude mapping as a Seq2Seq task using Titans + MIRAS.
+Squared Amplitudes play a major role in calculation cross-section or probabilty that a particular process takes place in the interaction of elementary particles. Using Amplitude expressions one can use a Seq2Seq model to get squared Amplitude expressions.
 
 ## Common Task 1.2 
 
