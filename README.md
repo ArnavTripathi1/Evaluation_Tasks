@@ -20,13 +20,13 @@ Tokenisation and Dataset Preprocessing
 
 Dataset: [Link](https://alabama.app.box.com/s/xhgr2onrn503jyse2fs5vxtapg0oifcs)  
 
-For Details: [Readme](./Common_Task_1.2/readme.md)
+For Details: [Readme](./Common_Task_1.2/README.md)
 
 ## Specific Task 2.4
 
 Titans architecture combined with MIRAS for Squared Amplitude Calculation
 
-For Details and model weights: [Readme](./Common_Task_2.4/readme.md)
+For Details and model weights: [Readme](./Common_Task_2.4/README.md)
 
 ## Results
 
@@ -57,13 +57,13 @@ This provides insight into the model’s reliance on memory vs. local attention 
 
 ![MAG Gate Analysis](./Specific_Test_2.4/MAG/mag_gate_plot.png)
 
-Further Discussion: [Readme](./Specific_Test_2.4/MAG/readme.md)
+Further Discussion: [Readme](./Specific_Test_2.4/MAG/README.md)
 
 ## Optional Specific Task 2.2
 
 Physics-Informed Models for Squared Amplitude Calculation
 
-For Details and model weights: [Readme](./Optional_Specific_Task_2.2/readme.md)
+For Details and model weights: [Readme](./Optional_Specific_Task_2.2/README.md)
 
 ## Results
 
