@@ -4,6 +4,8 @@ I developed a physics-informed dual head transformer for squared amplitude calcu
 
 Find all model weights at [link](https://drive.google.com/drive/folders/1ee1gqKr-H4R3zz_dK6ZFfA-w2e5fXSfr?usp=share_link)
 
+Ablation Study Details: [Ablation](./Ablation.md)
+
 ## Architecture
 
 The following architecture was implemented for Dual Heads:
