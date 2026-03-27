@@ -1,6 +1,6 @@
 # MAG Variant
 
-This variant achieved a token_accuracy of 99.97% and sequence_accuracy of 97.22% on the QED Dataset and token_accuracy of 55.10% and sequence_accuracy of 70.83% on the QCD Dataset.
+Memory-As-Gate variant achieved a token_accuracy of 99.97% and sequence_accuracy of 97.22% on the QED Dataset and token_accuracy of 55.10% and sequence_accuracy of 70.83% on the QCD Dataset.
 
 ## Ablation Study
 
