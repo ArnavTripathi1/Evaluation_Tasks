@@ -21,4 +21,4 @@ Tokenization is a critical design choice for this task because amplitudes and sq
 
 I have used text files to extract the expressions to create dataframe. Which was further split into train-val-test split. I have normalised the expressions and built the tokenizer.
 
-Refere to the notebook for details.
+Refer to the notebook for details.
