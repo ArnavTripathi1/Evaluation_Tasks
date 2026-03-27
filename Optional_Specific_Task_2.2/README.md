@@ -13,3 +13,10 @@ The following architecture was implemented for Dual Heads, where both Encoder an
 <div align="center">
   <img src="./PIT.png" alt="PIT" width="500"/>
 </div>
+
+## References
+
+- [Chebyshev Polynomial-Based Kolmogorov-Arnold Networks: An Efficient Architecture for Nonlinear Function Approximation](https://arxiv.org/abs/2405.07200)
+- [SineKAN: Kolmogorov-Arnold Networks Using Sinusoidal Activation](https://arxiv.org/abs/2407.04149)
+- [Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://arxiv.org/abs/1701.06538)
+- [SymFormer: End-to-End Symbolic Regression Using Transformer-Based Architecture](https://arxiv.org/abs/2205.15764)
