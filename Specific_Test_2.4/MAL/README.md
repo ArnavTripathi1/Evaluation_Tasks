@@ -34,7 +34,7 @@ This plot reflects how much internal memory weights are changing. Layer 2 has th
 
 The current results are derived from a single sequence and primarily serve as a qualitative validation of the MAL memory dynamics. Future work will involve scaling this analysis to a larger evaluation set and reporting aggregated metrics (mean ± variance) across sequences. Such a study would allow for statistically robust conclusions regarding layer wise sensitivity, memory efficiency and update dynamics.
 
-## Implementaion Details
+## MAL Implementaion Details
 
 ### 1. Chunk Context Extraction
 Instead of computing token-by-token gates the model extracts a global context vector $\mathbf{c}$ from the current input sequence chunk $\mathbf{X} \in \mathbb{R}^{L \times d}$ by mean-pooling across the sequence length $L$.
