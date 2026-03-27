@@ -6,7 +6,7 @@ Memory-As-Gate variant achieved a token_accuracy of 99.97% and sequence_accuracy
 
 ### 1. Chunk Level Global Context Pooling
 
-Before passing data to the gating linear layers the model extracts a single, stable global context vector $\mathbf{c}$ by averaging the embeddings across the entire chunk length $L$:
+Before passing data to the gating linear layers the model extracts a single global context vector $\mathbf{c}$ by averaging the embeddings across the entire chunk length $L$:
 
 $$\mathbf{c} = \frac{1}{L} \sum_{i=1}^{L} \mathbf{x}_i$$
 
