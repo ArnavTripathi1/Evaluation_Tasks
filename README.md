@@ -57,7 +57,7 @@ This provides insight into the model’s reliance on memory vs. local attention 
 
 ![MAG Gate Analysis](./Specific_Test_2.4/MAG/mag_gate_plot.png)
 
-Further Discussion: [Readme](./Specific_Test_2.4/MAG/README.md)
+Further Ablation Study: [Readme](./Specific_Test_2.4/MAG/README.md)
 
 ## Optional Specific Task 2.2
 
