@@ -2,6 +2,24 @@
 
 Memory-As-Gate variant achieved a token_accuracy of 99.97% and sequence_accuracy of 97.22% on the QED Dataset and token_accuracy of 55.10% and sequence_accuracy of 70.83% on the QCD Dataset.
 
+## MAG Implementation Details
+
+### 1. Chunk Level Global Context Pooling
+
+Before passing data to the gating linear layers the model extracts a single, stable global context vector $\mathbf{c}$ by averaging the embeddings across the entire chunk length $L$:
+
+$$\mathbf{c} = \frac{1}{L} \sum_{i=1}^{L} \mathbf{x}_i$$
+
+This forces the memory module to evaluate the "surprise" of a physics expression as a cohesive block rather than oscillating wildly on individual and isolated mathematical operators.
+
+### 2. Macro-Decision MAG Routing
+
+By applying the same chunk-level context vector $\mathbf{c}$ to the MAG gating mechanism, the implementation forces the model to make a **macro-routing decision** for the entire chunk:
+
+$$\mathbf{g} = \sigma \left( \mathbf{W}_g \mathbf{c} + \mathbf{b}_g \right)$$
+
+Instead of rapidly switching between Attention and Memory mid-expression the model evaluates the novelty of the entire QED/QCD sequence chunk and assigns a unified blend weight. 
+
 ## Ablation Study
 
 To analyze the gating behavior, I observed the mean gate activations in the Decoder Layers across samples and feature dimensions as a function of target positions.
