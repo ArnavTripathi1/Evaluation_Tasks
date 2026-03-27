@@ -8,6 +8,8 @@ I used a standard Encoder and a MAC augmented Decoder for the architecture.
 
 ## Architecture
 
+I used a standard Encoder and a MAC augmented Decoder for the architecture.
+
 <div align="center">
   <img src="./MAC.png" alt="MAC" width="500"/>
 </div>
