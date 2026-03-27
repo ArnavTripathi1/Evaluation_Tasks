@@ -8,7 +8,7 @@ Ablation Study Details: [Ablation](./Ablation.md)
 
 ## Architecture
 
-The following architecture was implemented for Dual Heads:
+The following architecture was implemented for Dual Heads, where both Encoder and Decoder have 3 layers each and a model dimension of 256, with 4 attention heads for QED and 8 attention heads for QCD Dataset:
 
 <div align="center">
   <img src="./PIT.png" alt="PIT" width="500"/>
