@@ -22,3 +22,8 @@ Tokenization is a critical design choice for this task because amplitudes and sq
 I have used text files to extract the expressions to create dataframe. Which was further split into train-val-test split. I have normalised the expressions and built the tokenizer.
 
 Refer to the notebook for details.
+
+## References
+
+- [Physics Informed Token Transformer for Solving Partial Differential Equations](https://arxiv.org/abs/2305.08757)
+- [Hybrid Tokenization and Datasets for Solving Mathematics and Science Problems Using Transformers.](https://www.researchgate.net/publication/357478306_Hybrid_Tokenization_and_Datasets_for_Solving_Mathematics_and_Science_Problems_Using_Transformers)
