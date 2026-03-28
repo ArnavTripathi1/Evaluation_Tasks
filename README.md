@@ -129,8 +129,6 @@ For Details and model weights: [Readme](./Optional_Specific_Task_2.2/README.md)
     ├── MAG
     ├── MAL
     └── README.md
-
-8 directories, 14 files
 ```
 
 ## References
