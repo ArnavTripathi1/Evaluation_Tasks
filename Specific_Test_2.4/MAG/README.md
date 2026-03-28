@@ -4,13 +4,25 @@ Memory-As-Gate variant achieved a token_accuracy of 99.97% and sequence_accuracy
 
 ## MAG Implementation Details
 
-### Chunk Level Global Context Pooling for Memory Dynamics
+### 1. Chunk Level Global Context Pooling for Memory Dynamics
 
 Before updating the memory states, the model extracts a single global context vector $\mathbf{c}$ by averaging the embeddings across the entire chunk length $L$:
 
 $$\mathbf{c} = \frac{1}{L} \sum_{i=1}^{L} \mathbf{x}_i$$
 
 The implementation uses it to dynamically dictate the learning rates and decay factors ($\theta$, $\eta$, $\alpha$) for the gradient based memory update.
+
+### 2. Token Level MAG Routing
+
+The model computes a token-by-token blending gate for the final output. It concatenates the outputs from the Short-Term Attention ($H_{swa}$) and Long-Term Memory ($H_{mem}$) through a linear projection to generate a unique gate $G \in \mathbb{R}^{T \times d}$ for every token:
+
+$$G = \sigma([H_{swa}; H_{mem}] \mathbf{W}_g + \mathbf{b}_g)$$
+
+The final representation is an element-wise blend:
+
+$$H_{out} = G \odot H_{mem} + (1 - G) \odot H_{swa}$$
+
+This enables the model to rapidly oscillate its reliance between Attention and Memory at the granularity of individual operators within a physics sequence.
 
 ## Ablation Study
 
