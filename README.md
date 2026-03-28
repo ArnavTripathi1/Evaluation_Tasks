@@ -104,6 +104,35 @@ For Details and model weights: [Readme](./Optional_Specific_Task_2.2/README.md)
 - Physics-informed components (KAN/SIREN) improve token-level precision.
 - Dual-head design improves representation learning by separating numerical and symbolic predictions.
 
+## Repository Structure
+
+```
+.
+├── Common_Task_1.2
+│   ├── README.md
+│   └── Tokenisation&EDA.ipynb
+├── Optional_Specific_Task_2.2
+│   ├── Ablation.md
+│   ├── ChebyKAN.ipynb
+│   ├── Distribution.png
+│   ├── Dual Heads.ipynb
+│   ├── PIT.png
+│   ├── README.md
+│   ├── SineKAN_SIREN.ipynb
+│   ├── SineKAN.ipynb
+│   ├── SineKAN&MoE_SIREN:Dual_Heads.ipynb
+│   └── SineKAN&MoE.ipynb
+├── README.md
+└── Specific_Test_2.4
+    ├── Baseline
+    ├── MAC
+    ├── MAG
+    ├── MAL
+    └── README.md
+
+8 directories, 14 files
+```
+
 ## References
 
 1. Behrouz, A., Razaviyayn, M., Zhong, P., & Mirrokni, V. (2025). *Titans: Learning to Memorize at Test Time*. arXiv:2501.00663.  
