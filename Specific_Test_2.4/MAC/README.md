@@ -8,7 +8,7 @@ This variant showed limited lower accuracy compared to the baseline, indicating 
 
 ### Chunk-Level Gating for Memory Updates
 
-he underlying Neural Memory module in this MAC implementation utilizes Chunk-Level Mean Pooling. The context vector $\mathbf{c}$ used to generate the optimizer gates (learning rate $\theta$, momentum $\eta$ and weight decay $\alpha$) is pooled across the entire chunk:
+The underlying Neural Memory module in this MAC implementation utilizes Chunk-Level Mean Pooling. The context vector $\mathbf{c}$ used to generate the optimizer gates (learning rate $\theta$, momentum $\eta$ and weight decay $\alpha$) is pooled across the entire chunk:
 
 $$\mathbf{c} = \frac{1}{L} \sum_{i=1}^{L} \mathbf{x}_i$$
 
