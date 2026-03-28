@@ -4,21 +4,13 @@ Memory-As-Gate variant achieved a token_accuracy of 99.97% and sequence_accuracy
 
 ## MAG Implementation Details
 
-### 1. Chunk Level Global Context Pooling
+### Chunk Level Global Context Pooling for Memory Dynamics
 
-Before passing data to the gating linear layers the model extracts a single global context vector $\mathbf{c}$ by averaging the embeddings across the entire chunk length $L$:
+Before updating the memory states, the model extracts a single global context vector $\mathbf{c}$ by averaging the embeddings across the entire chunk length $L$:
 
 $$\mathbf{c} = \frac{1}{L} \sum_{i=1}^{L} \mathbf{x}_i$$
 
-This forces the memory module to evaluate the "surprise" of a physics expression as a cohesive block rather than oscillating wildly on individual and isolated mathematical operators.
-
-### 2. Macro-Decision MAG Routing
-
-By applying the same chunk-level context vector $\mathbf{c}$ to the MAG gating mechanism, the implementation forces the model to make a **macro-routing decision** for the entire chunk:
-
-$$\mathbf{g} = \sigma \left( \mathbf{W}_g \mathbf{c} + \mathbf{b}_g \right)$$
-
-Instead of rapidly switching between Attention and Memory mid-expression the model evaluates the novelty of the entire QED/QCD sequence chunk and assigns a unified blend weight. 
+The implementation uses it to dynamically dictate the learning rates and decay factors ($\theta$, $\eta$, $\alpha$) for the gradient based memory update.
 
 ## Ablation Study
 
