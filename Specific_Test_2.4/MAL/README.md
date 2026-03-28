@@ -44,11 +44,11 @@ $$\mathbf{c} = \frac{1}{L} \sum_{i=1}^{L} \mathbf{x}_i$$
 ### 2. Data-Dependent Gating
 The context vector dynamically modulates the base optimizer hyperparameters. By passing $\mathbf{c}$ through linear gating layers and taking the expected value (mean) of the output features the model generates scalar multipliers for the learning rate ($\theta$), momentum ($\eta$) and weight decay ($\alpha$).
 
-$$\theta = \lambda_{\text{base}} \cdot \mathbb{E} \left[ \mathbf{W}_\theta \mathbf{c} + \mathbf{b}_\theta \right]$$
+$$\theta = \lambda_{\text{base}} \cdot \mathbb{E} \left[ \sigma(\mathbf{W}_\theta \mathbf{c} + \mathbf{b}_\theta) \right]$$
 
-$$\eta = \mu_{\text{base}} \cdot \mathbb{E} \left[ \mathbf{W}_\eta \mathbf{c} + \mathbf{b}_\eta \right]$$
+$$\eta = \mu_{\text{base}} \cdot \mathbb{E} \left[ \sigma(\mathbf{W}_\eta \mathbf{c} + \mathbf{b}_\eta) \right]$$
 
-$$\alpha = \gamma_{\text{base}} \cdot \mathbb{E} \left[ \mathbf{W}_\alpha \mathbf{c} + \mathbf{b}_\alpha \right]$$
+$$\alpha = \gamma_{\text{base}} \cdot \mathbb{E} \left[ \sigma(\mathbf{W}_\alpha \mathbf{c} + \mathbf{b}_\alpha) \right]$$
 
 ### 3. Key-Value Projections
 The input chunk is linearly projected and normalized to form the retrieval keys $\mathbf{K}$ and target values $\mathbf{V}$.
