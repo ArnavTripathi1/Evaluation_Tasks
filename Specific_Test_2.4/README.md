@@ -4,7 +4,7 @@
 
 I have used Encoder-Decoder style Attention-Titans hybrid models, having similar architecture to seq2seq transformers. Placing Titans modules in Decoder layers.
 
-In proposal I have discussed two architectures one of them is used here.
+In proposal I have briefly discussed about two architectures that I will work on, one of them is used here.
 
 ## Implementation Details
 
