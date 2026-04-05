@@ -4,7 +4,7 @@ Memory-As-Layer variant achieved 99.84% token_accuracy and 91.67% sequence_accur
 
 ## Memory Diagnostics
 
-To understand the test time learning more I logged three internal signals per Decoder layer: Gradient Norm (||∇w​L||), associative memory loss and memory update magnitude (||Δw||).
+To understand the test time learning more I logged three internal signals (for a single sequence of QED Dataset) per Decoder layer: Gradient Norm (||∇w​L||), associative memory loss and memory update magnitude (||Δw||).
 
 <div align="center">
   <img src="./grad_norm.png" alt="MAL" width="600"/>
@@ -32,7 +32,7 @@ The associative memory loss plot shows that the memory is actively trying to fit
 
 This plot reflects how much internal memory weights are changing. Layer 2 has the largest update magnitude overall while Layer 1 has the smallest. Layer 3 starts with relatively small updates but becomes more active toward later chunks, which aligns with its improving loss trend.
 
-Future work will involve scaling this analysis to a larger evaluation set and reporting aggregated metrics (mean ± variance) across sequences. Such a study would allow for statistically robust conclusions regarding layer wise sensitivity, memory efficiency and update dynamics.
+The current results are derived from a single sequence and primarily serve as a qualitative validation of the MAL memory dynamics. Future work will involve scaling this analysis to a larger evaluation set and reporting aggregated metrics (mean ± variance) across sequences. Such a study would allow for statistically robust conclusions regarding layer wise sensitivity, memory efficiency and update dynamics.
 
 ## MAL Implementaion Details
 
